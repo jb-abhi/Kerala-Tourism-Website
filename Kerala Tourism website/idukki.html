@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Idukki</title>
+    <link rel="stylesheet" href="place.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <!-- NAVBAR -->
+
+      <div class="nav-links sticky-top">
+        <nav class="navbar navbar-expand-lg" style="background-color: #e8edf7">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/Images/images.png"
+                alt=""
+                width="80"
+                height="60"
+                class="d-inline-block align-text-left"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="idukki.html#places">Explore</a>
+                </li>
+              </ul>
+
+              <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                <button
+                  class="btn btn-warning btn-lg me-md-2"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Login"
+                >
+                  Log-in
+                </button>
+                <button
+                  class="btn btn-success btn-lg"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Sign-up
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- NAVBAR END -->
+    <!-- Modal SIGN-UP-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kerala Tourism</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="container">
+              <div class="form-wrap">
+                <h1>Sign Up</h1>
+                <p>Get regular updates and newsletters by signing up</p>
+                <form>
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="firstName" id="first-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="lastName" id="last-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="abc@xyz.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Should contain both letters and numbers"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="pasword2" id="password2" />
+                  </div>
+                  <button type="submit" class="btn">Sign Up</button>
+                  <p class="bottom-text">
+                    By clicking the Sign Up button, you agree to our <br />
+                    <a href="#">Terms & Conditions</a> and
+                    <a href="#">Privacy Policy</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p>
+              Already have an account?
+              <a href="#" data-bs-toggle="modal" data-bs-target="#Login"
+                >Login Here</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Log-IN-->
+    <div
+      class="modal fade"
+      id="Login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kerala Tourism</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="container">
+              <div class="form-wrap-login">
+                <h1>Log in</h1>
+                <form>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="abc@xyz.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Should contain both letters and numbers"
+                    />
+                  </div>
+                  <button type="submit" class="btn">Log in</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p>Forgot password? <a href="#">Click here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form">
+      <h4>BOOK A TOUR</h4>
+      <!-- FORM -->
+      <div class="wrapper">
+        <form action="#">
+          <div
+            class="form-group border-bottom d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <label class="option my-sm-0 my-2">
+              <input type="radio" name="radio" checked />Round Trip
+              <span class="checkmark"></span>
+            </label>
+            <label class="option my-sm-0 my-2">
+              <input type="radio" name="radio" />One Way
+              <span class="checkmark"></span>
+            </label>
+            <div class="d-flex align-items-center my-sm-0 my-2">
+              <a href="#" class="text-decoration-none">
+                Multi-city/Stopovers
+                <span class="fas fa-angle-right ps-2 text-primary"></span>
+              </a>
+            </div>
+          </div>
+          <div class="form-group d-sm-flex margin">
+            <div
+              class="d-flex align-items-center flex-fill me-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="text"
+                required
+                placeholder="From"
+                class="form-control"
+              />
+              <div class="label" id="from"></div>
+              <span class="fas fa-dot-circle text-muted"></span>
+            </div>
+            <div
+              class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="text"
+                required
+                placeholder="To"
+                class="form-control"
+              />
+              <div class="label" id="to"></div>
+              <span class="fas fa-map-marker text-muted"></span>
+            </div>
+          </div>
+          <div class="form-group d-sm-flex margin">
+            <div
+              class="d-flex align-items-center flex-fill me-sm1 my-sm-0 border-bottom position-relative"
+            >
+              <input
+                type="date"
+                required
+                placeholder="Depart Date"
+                class="form-control"
+              />
+              <div class="label" id="depart"></div>
+            </div>
+            <div
+              class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="date"
+                required
+                placeholder="Return Date"
+                class="form-control"
+              />
+              <div class="label" id="return"></div>
+            </div>
+          </div>
+          <div
+            class="form-group border-bottom d-flex align-items-center position-relative"
+          >
+            <input
+              type="text"
+              required
+              placeholder="Traveller(s)"
+              class="form-control"
+            />
+            <div class="label" id="psngr"></div>
+            <span class="fas fa-users text-muted"></span>
+          </div>
+          <div class="form-group my-3">
+            <div
+              class="btn btn-primary rounded-0 d-flex justify-content-center text-center p-2"
+            >
+              Search Flights
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Carousal Start -->
+    <!-- Carousel wrapper -->
+    <div
+      id="carouselVideoExample"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Videos/Idukki/production ID_4120588.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Aerial View</h5>
+            <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Videos/Idukki/Pexels Videos 1448735.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sight-Seeing</h5>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Videos/Idukki/Pexels Videos 2098989.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lake-view</h5>
+            <!-- <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselVideoExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselVideoExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
+
+    <!-- Explore -->
+
+    <div class="container" id="places">
+      <section class="article">
+        <!-- <div class="explore"> -->
+        <h3>Explore Idukki</h3>
+        <div class="content">
+          <h4>1. HILL VIEW PARK</h4>
+          <img
+            src="/Videos/Idukki/Idukki009.jpg"
+            alt=""
+            width="310"
+            height="400"
+          />
+          <p>
+            Located just about a kilometre from the Idukki city centre, the Hill
+            View Park is set up approximately 350 feet from the Idukki dam. As
+            the name suggests, Hill View Park is one such places in Idukki that
+            offers spectacular views of the Cheruthoni and Idukki Dams. <br />
+            Besides being a famous tourist destination of Idukki, this park is
+            also a great place to spot diverse wildlife in its belt natural
+            habitat. Hill View Park also has a couple of recent adventure
+            additions including ziplining. <br />
+            A sloping path up to Hill View Park opens visitors to a serene green
+            atmosphere with a few eating options and toilet facilities as well.
+            <br />
+            There is also a children's play area with slides and swings within
+            this park. One of the top buys here is the famous spiced chocolate.
+            Hill View Park is a great photo op for the Idukki dam, as it is not
+            allowed to click pictures at the dam. <br />
+            Hill View Park, one of the Idukki tourist places, located at a
+            distance of 2 km from Idukki Bus stand, is a magnificent and
+            well-managed park. The park, stretching over 8 acres enthralls the
+            visitors with hundreds of varieties of crotons, flowers, medicinal
+            plants, and other woods. <br />
+            The Hill View Park houses a natural water body, where visitors can
+            enjoy boat rides. The view from the watchtower of both the dams,
+            Idukki and Cheruthoni, the surrounding hills on all four sides and
+            the lush greenery takes the breath away. <br />
+          </p>
+        </div>
+
+        <div class="content2">
+          <h4>2. KULAMAVU DAM</h4>
+          <img
+            src="/Videos/Idukki/pexels-thisisengineering-3862139.jpg"
+            alt=""
+            width="300"
+            height="400"
+          />
+          <p>
+            Situated in Kulamavu, the Kulamavu Dam is a gravity dam. The dam
+            part of three dams dedicated to the Idukki Hydro Electric Power
+            Plant that also encloses a manmade lake. Although quite mundane,
+            this dam is a good place for some short sightseeing. <br />
+            Besides, Kulamavu dam is also part of the state's largest river,
+            Periyar's power ventures. However, photography is not allowed here.
+            Kolamavu dam is a gravity /masonry Dam on the Periyar river. It is
+            one of the three dams associated with the Idukki hydroelectric power
+            project in the Indian state of India Kerala . The dam is situated on
+            the Thodupuzha- Puliyanmala States Highway about 23 kilometres from
+            Idukki arch Dam 22 kilometre from Cheruthini dam and 30 kilometre
+            from Thodupuzha. <br />
+            The dams of Idukki , Cheruthoni and Kulamavu extend to an area of 33
+            kilometres . The construction of these three dams 60 kilometre
+            artificial lake. The water stored in it was used for the production
+            of electricity at the power house in Moolamattom.
+            <br />
+            There are occasional boating facilities at the lake here. Quite
+            close to the dam are a few eating options. <br />
+            The 60 sq. km artificial lake formed as a result of the construction
+            of the 3 dams, add scenic beauty to the rugged rocky terrain and
+            verdant vegetation around it. <br />
+            The hill station charms the visitors with the picturesque
+            countryside, rubber and spice plantations. The visitors go gaga over
+            the various species of birds such as darter or snakebird, kingfisher
+            etc. that inhabit the hill station.
+          </p>
+        </div>
+        <div class="content">
+          <h4>3. IDUKKI ARCH DAM</h4>
+          <img
+            src="/Videos/Idukki/pexels-roman-odintsov-4552789.jpg"
+            alt=""
+            width="300"
+            height="400"
+          />
+          <p>
+            Idukki Arch Dam, an engineering marvel, is located in the
+            South-Indian state of Kerala. It is an arch dam with a double
+            curvature and is built on River Periyar. <br />
+            Precisely, the dam is constructed in a gorge between two hills,
+            Kuravathi and Kuravan. It is at the height of about 550 feet and is
+            a breathtaking sight in the otherwise rugged terrain along which has
+            been built. <br />
+            With this height, it is one of the highest arch dams in Asia.
+            Because of its massive size, the dam can be seen from quite some
+            distance and the sight of the structure in between the granite hills
+            is breathtaking.
+          </p>
+          <h5>History</h5>
+          <p>
+            The idea of constructing a dam for power generation was first
+            conceived in 1919. As per history, Shri Kolumban, the head of
+            ‘Araya’ race during 1922, showed the way to the Malankara Estate
+            Superintendent and his friend Thomas, who were on hunting spree in
+            the forest, the spot of present Arch Dam. He told them of the legend
+            of Kuravan and Kurathi Hills. <br />
+            Mr. Thomas was impressed by the sight of water flow between the
+            mountains and it was his idea that has materialised in the form of
+            Idukki Arch Dam. <br />
+            Sri. W.J.John of Malankara Estate submitted a report to the
+            Government of Travancore in 1932 on the possibility of constructing
+            a dam at Idukki for Power Generation.
+          </p>
+        </div>
+        <div class="content2">
+          <h4>4.ANAKKARA</h4>
+          <img
+            src="/Videos/Idukki/hills-station.jpg"
+            alt=""
+            width="320"
+            height="400"
+          />
+          <p>
+            A small village in the Idukki district, Anakarra is just about 50
+            sq. km in area. Situated approximately 18 km from Idduki wildlife
+            sanctuary on the Kumily-Munnar state highway, this place is famous
+            for its spice plantations and picturesque waterfalls. <br />
+            It also offers trekking opportunities and paragliding options
+            depending on weather for adventure enthusiasts. Aruvikuzhi Falls,
+            also known as Chellarcovil falls is a very famous spot which also
+            houses an Ayurvedic destination resorts apart from spice
+            plantations.
+            <br />
+            Ottakathalemedu is another nearby place which offers a panoramic
+            view of Anakkara and surrounding area and a beautiful sunset view.
+            Home Stays are an important accommodation option in this area.
+          </p>
+          <h5>Attractions</h5>
+          <p>
+            Anakkara is a quaint village in the Idukki district of Kerala. Not
+            many people know about it, so if you want to find out how to reach
+            Anakkara, read on. Anakkara is located at a distance of 18 km from
+            the famous Thekkady Wildlife Sanctuary. <br />
+            Anakkara is becoming more and more popular among tourists. This is
+            mainly because of the unique spice gardens in Anakkara and several
+            other tourist spots around Anakkara. United Nations Development
+            Programme and Government of India have decided to promote tourism in
+            Anakkara, primarily due to its spice plantations.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="webpage" id="contact">
+      Toll free No: 1-800-425-4747
+      <br />
+      Department of Tourism, Government of Kerala, Park View,
+      Thiruvananthapuram, Kerala, India - 695 033
+      <br />
+      Phone:+91 471 2321132, Fax:+91 471 2322279, E-mail:info@keralatourism.org
+    </footer>
+
+    <button type="button" class="btn" id="btn-back-to-top">
+      <a href="#">
+        <img
+          src="/Images/pngaaa.com-1862718.png"
+          alt=""
+          width="25"
+          height="22"
+        />
+      </a>
+    </button>
+  </body>
+</html>

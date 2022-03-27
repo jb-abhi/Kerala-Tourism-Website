@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Ernakulam</title>
+    <link rel="stylesheet" href="place.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <!-- NAVBAR -->
+
+      <div class="nav-links sticky-top">
+        <nav class="navbar navbar-expand-lg" style="background-color: #e8edf7">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/Images/images.png"
+                alt=""
+                width="80"
+                height="60"
+                class="d-inline-block align-text-left"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ernakulam.html#places">Explore</a>
+                </li>
+              </ul>
+
+              <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                <button
+                  class="btn btn-warning btn-lg me-md-2"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Login"
+                >
+                  Log-in
+                </button>
+                <button
+                  class="btn btn-success btn-lg"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Sign-up
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- NAVBAR END -->
+    <!-- Modal SIGN-UP-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kerala Tourism</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="container">
+              <div class="form-wrap">
+                <h1>Sign Up</h1>
+                <p>Get regular updates and newsletters by signing up</p>
+                <form>
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="firstName" id="first-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="lastName" id="last-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="abc@xyz.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Should contain both letters and numbers"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="pasword2" id="password2" />
+                  </div>
+                  <button type="submit" class="btn">Sign Up</button>
+                  <p class="bottom-text">
+                    By clicking the Sign Up button, you agree to our <br />
+                    <a href="#">Terms & Conditions</a> and
+                    <a href="#">Privacy Policy</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p>
+              Already have an account?
+              <a href="#" data-bs-toggle="modal" data-bs-target="#Login"
+                >Login Here</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Log-IN-->
+    <div
+      class="modal fade"
+      id="Login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kerala Tourism</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="container">
+              <div class="form-wrap-login">
+                <h1>Log in</h1>
+                <form>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="abc@xyz.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Should contain both letters and numbers"
+                    />
+                  </div>
+                  <button type="submit" class="btn">Log in</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p>Forgot password? <a href="#">Click here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form">
+      <h4>BOOK A TOUR</h4>
+      <!-- FORM -->
+      <div class="wrapper">
+        <form action="#">
+          <div
+            class="form-group border-bottom d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <label class="option my-sm-0 my-2">
+              <input type="radio" name="radio" checked />Round Trip
+              <span class="checkmark"></span>
+            </label>
+            <label class="option my-sm-0 my-2">
+              <input type="radio" name="radio" />One Way
+              <span class="checkmark"></span>
+            </label>
+            <div class="d-flex align-items-center my-sm-0 my-2">
+              <a href="#" class="text-decoration-none">
+                Multi-city/Stopovers
+                <span class="fas fa-angle-right ps-2 text-primary"></span>
+              </a>
+            </div>
+          </div>
+          <div class="form-group d-sm-flex margin">
+            <div
+              class="d-flex align-items-center flex-fill me-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="text"
+                required
+                placeholder="From"
+                class="form-control"
+              />
+              <div class="label" id="from"></div>
+              <span class="fas fa-dot-circle text-muted"></span>
+            </div>
+            <div
+              class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="text"
+                required
+                placeholder="To"
+                class="form-control"
+              />
+              <div class="label" id="to"></div>
+              <span class="fas fa-map-marker text-muted"></span>
+            </div>
+          </div>
+          <div class="form-group d-sm-flex margin">
+            <div
+              class="d-flex align-items-center flex-fill me-sm1 my-sm-0 border-bottom position-relative"
+            >
+              <input
+                type="date"
+                required
+                placeholder="Depart Date"
+                class="form-control"
+              />
+              <div class="label" id="depart"></div>
+            </div>
+            <div
+              class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="date"
+                required
+                placeholder="Return Date"
+                class="form-control"
+              />
+              <div class="label" id="return"></div>
+            </div>
+          </div>
+          <div
+            class="form-group border-bottom d-flex align-items-center position-relative"
+          >
+            <input
+              type="text"
+              required
+              placeholder="Traveller(s)"
+              class="form-control"
+            />
+            <div class="label" id="psngr"></div>
+            <span class="fas fa-users text-muted"></span>
+          </div>
+          <div class="form-group my-3">
+            <div
+              class="btn btn-primary rounded-0 d-flex justify-content-center text-center p-2"
+            >
+              Search Flights
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Carousal Start -->
+    <!-- Carousel wrapper -->
+    <div
+      id="carouselVideoExample"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Videos/Idukki/production ID_5117938.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sunset</h5>
+            <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Images/Districts/Ernakulam/Y2Mate.is - Cochin Aerial Views 4k Kerala Tourism-YOJiB8qQLPY-1080p-1648310539234 (online-video-cutter.com).mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Aerial View</h5>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Images/Districts/Ernakulam/Bhothathankettu _ Ernakulam _ Kerala _ India _ 4K _ The World (online-video-cutter.com).mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lake-view</h5>
+            <!-- <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselVideoExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselVideoExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
+
+    <!-- Explore -->
+
+    <div class="container" id="places">
+      <section class="article">
+        <!-- <div class="explore"> -->
+        <h3>Explore Ernakulam</h3>
+        <div class="content">
+          <h4>1. MATTANCHERRY PALACE</h4>
+          <img
+            src="/Images/Districts/Ernakulam//Mattancherry-Palace-Kochi-1.jpg"
+            alt=""
+            width="300"
+            height="300"
+          />
+          <p>
+            Popularly known as the Dutch Palace, the Mattancherry Palace is a
+            Portuguese palace in Mattancherry, Kochi, in the state of Kerala.
+            Mattancherry Palace is now a museum displaying paraphernalia
+            belonging to the rajas of Kochi. Visit this destination to learn
+            about the fascinating history of Kerala through the medium of
+            irreplaceable artefacts and embellishments. <br />
+            The grandeur of Mattancherry Palace lies in its simplicity and it is
+            built in the typical Kerala style mansions reserved for the
+            nobility. The four separate wings of the Mattancherry Palace
+            surround a central courtyard which has a temple as well. It features
+            murals depicting portraits and exhibits of the Rajas of Kochi. They
+            have been painted in warm colours using the tempera technique and
+            consists of a portrait gallery of the Cochin Rajas and beautiful
+            mythological murals.
+          </p>
+          <h5>Architecture of Mattancherry Palace</h5>
+          <p>
+            The palace is quadrangular in shape, having a Nalukettu style of
+            architecture (traditional Kerala style of architecture) with a hint
+            of European influence in the arches and the chambers. The
+            Mattancherry Palace has a courtyard in the middle consisting of
+            three temples dedicated to 'Pazhayannur Bhagavati', the protective
+            goddess of the Kochi royal family, Lord Krishna and Lord Shiva
+            respectively. <br />
+            The dining hall has an ornate wooden ceiling decorated with a series
+            of brass cups. There are rare examples of traditional Kerala
+            flooring which is a mixture of burned coconut shells, charcoal,
+            lime, plant juices and egg whites and looks like black marble.
+          </p>
+        </div>
+
+        <div class="content2">
+          <h4>2. CHERAI BEACH</h4>
+          <img
+            src="/Images/Districts/Ernakulam/pexels-brady-knoll-2889492.jpg"
+            alt=""
+            width="300"
+            height="400"
+          />
+          <p>
+            Cherai Beach, which is one of the best-voted beaches of the state,
+            is situated at a distance of 30 km from Kochi city. Its strategic
+            location on the northern end of the Vypin Island in Kochi makes it a
+            perfect merging point of the sea and backwaters. <br />
+            The surrounding greenery and the seashells present in different
+            shapes and Chinese fishing nets add to the beauty of the sea. Its
+            coastline alone runs for about 15 km and plays a distinguishing
+            factor from all the other beaches. <br />
+            This mesmerising beach which is 15 km long is unique since it is one
+            of the very few clean beaches which turn out to be ideal for
+            sunbathing. Be careful of swimming as it might be unsafe due to the
+            undercurrents. <br />
+            People who are merely nature lovers can go for watching dolphins
+            diving in the sea. You also have the option of going for cycling and
+            exploring the scenic beauty of the place. Bikes on rent are pretty
+            much reasonable and offer a wonderful as well as rich experience.
+            <br />
+            The locals of Cherai love flying kites, and that is one activity you
+            sure can indulge in. It is such a popular activity amongst everyone
+            there that a kite flying festival is organised with sheer joy
+            annually.
+          </p>
+          <h5>Best Time to Visit</h5>
+          <p>
+            The best time to visit the Cherai beach is during the months of
+            October to March since the weather is pleasant. It is the perfect
+            time to witness this exotic location and have the time of your life.
+          </p>
+        </div>
+        <div class="content">
+          <h4>3. FORT KOCHI</h4>
+          <img
+            src="/Images/Districts/Ernakulam/pexels-asif-pav-10879260.jpg"
+            alt=""
+            width="300"
+            height="400"
+          />
+          <p>
+            Fort Kochi is a seaside town in the south-western part of Main Kochi
+            which is known for its old-world colonial charm. The place still
+            holds on to every single cultural change it has gone through over
+            the centuries. <br />
+            We can see the remnants of British rule all over the country. The
+            tourists' flock hear all around the year to have a glimpse of how
+            Portuguese or Dutch colonialism affected parts of our country.
+            <br />
+            This quaint city is dotted with European structures and has an
+            overall ambience that keeps reminding you of the colonial powers
+            that once ruled over the place. Till date, it has the vibe of an
+            ancient colonial city with its toy-town like streets, colourful and
+            charming buildings and a picturesque view out at the beach - much
+            like the small towns of southern Europe.
+          </p>
+          <h5>Attractions</h5>
+          <p>
+            You can take a quiet walk along the sands of Fort Kochi beach, enjoy
+            the sunset and have a look around some of the historical spots like
+            the fort and the famous Chinese nets; or you can indulge in water
+            activities like fishing, dolphin sighting, beach photography and
+            more. <br />
+            You can also treat yourself to the delicious treats sold in the food
+            stalls at the beach - grilled fish, shrimps, prawns there is no
+            dearth of it. There are boat rides available to have a look around
+            the numerous mini islands in the backwaters which separate the main
+            city of Ernakulum from Fort Kochi.
+          </p>
+        </div>
+        <div class="content2">
+          <h4>4.SANTA CRUZ BASILICA</h4>
+          <img
+            src="/Images/Districts/Ernakulam/stock-photo-religion-church-india-basilica-catholic-kerala-cochin-kochi-santa-cruz-cathedral-22053a93-a02b-4735-b77a-4f922af971f2.jpg"
+            alt=""
+            width="300"
+            height="400"
+          />
+          <p>
+            The Santa Cruz Cathedral Basilica is located at Fort Kochi and is
+            one of the eight Basilicas in India. Located on K.B. Jacob Road in
+            Fort Kochi, this beautiful roman catholic church serves as the
+            cathedral church of the Diocese of Kochi. The church is the second
+            cathedral built by the Portuguese. <br />
+            The columns are decorated with frescoes, and there are seven large
+            canvas paintings along with the beautiful stained glass windows. The
+            ceiling holds some beautifully painted images depicting the images
+            of Via Crucis of Christ. <br />
+            This Cathedral holds a special significance for the Christians
+            residing in the city of Kochi as it celebrates the dawn of their
+            religion in the land of India.
+          </p>
+          <h5>Architecture of Santa Cruz Basilica</h5>
+          <p>
+            The architecture of the basilica depicts a beautiful blend of the
+            Indo-European and the gothic style. The making of the pulpit and the
+            wooden panelling of this cathedral is very impressive. <br />
+            The wooden panels and pulpit are beautifully crafted. The visitors
+            can spot the presence of some exquisite paintings of Italian Origin
+            inside this Cathedral.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="webpage" id="contact">
+      Toll free No: 1-800-425-4747
+      <br />
+      Department of Tourism, Government of Kerala, Park View,
+      Thiruvananthapuram, Kerala, India - 695 033
+      <br />
+      Phone:+91 471 2321132, Fax:+91 471 2322279, E-mail:info@keralatourism.org
+    </footer>
+
+    <button type="button" class="btn" id="btn-back-to-top">
+      <a href="#">
+        <img
+          src="/Images/pngaaa.com-1862718.png"
+          alt=""
+          width="25"
+          height="22"
+        />
+      </a>
+    </button>
+  </body>
+</html>

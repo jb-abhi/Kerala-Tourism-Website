@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerala Tourism</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <!-- NAVBAR -->
+      
+      <div class="nav-links sticky-top">
+        <nav class="navbar navbar-expand-lg" style="background-color: #e8edf7">
+
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/Images/images.png"
+                alt=""
+                width="80"
+                height="60"
+                class="d-inline-block align-text-left"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#toursection">Take a tour</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#contact">Contact us</a>
+                </li>
+              </ul>
+
+              <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                <button class="btn btn-warning btn-lg me-md-2" type="button" data-bs-toggle="modal" data-bs-target="#Login">
+                  Log-in
+                </button>
+                <button class="btn btn-success btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Sign-up
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- NAVBAR END -->
+      <!-- Carousal Start -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/Images/pexels-nandhu-kumar-5213566.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/Images/girl-6352785.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/Images/sunset-1139293.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        <div class="carousel-item">
+          <img
+            src="/Images/Districts/pexels-sanoop-m-narayannan-11428111.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousal End -->
+      <!-- Carousal TEXT -->
+      <div class="text-box">
+        <h1>Welcome to God's Own Country</h1>
+        <p>
+          Kerala is one of the prominent tourist destinations of India, with
+          coconut-lined sandy beaches, backwaters, hill stations, Ayurvedic
+          tourism and tropical greenery as its major attractions.
+          <br />
+          <u>#KeralaTourism</u> is Live & Trending. Don't forget to follow &
+          share your Kerala experience.
+        </p>
+        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="hero-btn" >Sign-up to know more</a>
+        
+      </div>
+    </section>
+    <!-- Carousal TEXT END -->
+    <!-- PLACES -->
+    <section class="tour" id="toursection" >
+      <div class="gif-tour"><h1>Take a</h1>
+        <img src="/Videos/tour.gif" alt="">
+      </div> 
+      <div class="row row-cols-1 row-cols-md-4 g-3">
+        <div class="newtab">
+        <a href="alappuzha.html" target="_blank">
+        <div class="col">
+          <div class="card text-white bg-dark">
+            <img
+              src="/Images/Districts/Alappuzha.jpeg"
+              class="card-img-top"
+              alt="Alappuzha"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alappuzha</h5>
+              <p class="card-text">
+                Alappuzha is a city on the Laccadive Sea in the southern Indian state of Kerala. It's best known for houseboat cruises along the rustic Kerala backwaters, a network of tranquil canals and lagoons.It is also the access point for the annual Nehru Trophy Boat Race.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+        
+    <div class="newtab-white">
+      <a href="ernakulam.html" target="_blank">
+        <div class="col">
+          <div class="card">
+            <img
+              src="/Images/Districts/Ernakulam.jpg"
+              class="card-img-top"
+              alt="Ernakulam"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ernakulam</h5>
+              <p class="card-text">
+                Sprawling, residential Ernakulam is known for Marine Drive, a busy waterfront promenade where boats offer backwater cruises. The Kerala Folklore and Hill Palace museums explore local heritage through art and antiquities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    <div class="newtab">
+      <a href="idukki.html" target="_blank">
+        <div class="col">
+          <div class="card text-white bg-dark">
+            <img
+              src="/Images/Districts/Idukki.jpg"
+              class="card-img-top"
+              alt="Idukki"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Idukki</h5>
+              <p class="card-text">
+                Idukki district is a densely forested, mountainous region in the south Indian state of Kerala. In the north, Anamudi mountain towers over Eravikulam National Park, where the rare, blue Neelakurinji flower blooms every 12 years.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    <div class="newtab-white">
+      <a href="kannur.html" target="_blank">
+        <div class="col">
+          <div class="card">
+            <img
+              src="/Images/Districts/Kannur.jpg"
+              class="card-img-top"
+              alt="Kannur"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kannur</h5>
+              <p class="card-text">
+                Kannur is a coastal city in the south Indian state of Kerala. It was once an ancient trading port. Enduring monuments such as 16th-century St. Angelo Fort, once occupied by European colonial forces, show the city’s significant role in the spice trade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    <div class="newtab">
+      <a href="kasargod.html" target="_blank">
+        <div class="col">
+          <div class="card">
+            <img
+              src="/Images/Districts/Kasargod.jpg"
+              class="card-img-top"
+              alt="Kasargod"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kasargod</h5>
+              <p class="card-text">
+                Kasaragod, formerly Kassergode, is a municipal town and administrative headquarters of Kasaragod district in the state of Kerala, India. Established in the year 1966, Kasaragod was the first municipal town in the district.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    <div class="newtab-white">
+      <a href="underconstruction.html" target="_blank">
+        <div class="col">
+          <div class="card text-white bg-dark">
+            <img
+              src="/Images/Districts/Kollam.jpg"
+              class="card-img-top"
+              alt="Kollam"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kollam</h5>
+              <p class="card-text">
+                Kollam is a city in the state of Kerala, on India's Malabar Coast. It’s known as a trade hub and for its beaches, like lively Kollam and secluded Thirumullavaram.Nearby, Ashtamudi Lake is a gateway to the Kerala backwaters, a network of waterways rich with vegetation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    <div class="newtab">
+      <a href="underconstruction.html" target="_blank">
+        <div class="col">
+          <div class="card">
+            <img
+              src="/Images/Districts/Kottayam.jpg"
+              class="card-img-top"
+              alt="Kottayam"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kottayam</h5>
+              <p class="card-text">
+                Kottayam, IPA: is a city in the Indian state of Kerala. Flanked by the Western Ghats on the east and the Vembanad Lake and paddy fields of Kuttanad, Kottayam is a place that is known for extraordinary qualities.It is the district headquarters of Kottayam district.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    
+    <div class="newtab-white">
+      <a href="underconstruction.html" target="_blank">
+        <div class="col">
+          <div class="card text-white bg-dark">
+            <img
+              src="/Images/Districts/Kozhikkode.jpg"
+              class="card-img-top"
+              alt="Kozhikkode"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kozhikkode</h5>
+              <p class="card-text">
+                Kozhikode is a coastal city in the south Indian state of Kerala. It was a significant spice trade center and is close to Kappad Beach, where Portuguese explorer Vasco da Gama landed in 1498. The central Kozhikode Beach, overlooked by an old lighthouse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    <div class="newtab">
+      <a href="underconstruction.html" target="_blank">
+        <div class="col">
+          <div class="card text-white bg-dark">
+            <img
+              src="/Images/Districts/Malappuram.jpg"
+              class="card-img-top"
+              alt="Malappuram"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Malappuram</h5>
+              <p class="card-text">
+                Malappuram is a city in the Indian state of Kerala, spread over an area of 58.20 km².The first municipality in the district formed in 1970, Malappuram serves as the administrative headquarters of Malappuram district.It is the fastest growing city in the world with a 44.1% urban growth between 2015 and 2020.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    <div class="newtab-white">
+      <a href="underconstruction.html" target="_blank">
+        <div class="col">
+          <div class="card">
+            <img
+              src="/Images/Districts/Palakkad.jpg"
+              class="card-img-top"
+              alt="Palakkad"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Palakkad</h5>
+              <p class="card-text">
+                Palakkad, or Palghat, is a city in Kerala, a state in southwestern India. The 18th-century Palakkad Fort has sturdy battlements, a moat and a Hanuman temple on its grounds. Palakkad is also known as the rice bowl of Kerala. The 18th-century Palakkad Fort has sturdy battlements, a moat, and a Hanuman temple on its grounds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    <div class="newtab">
+      <a href="underconstruction.html" target="_blank">
+        <div class="col">
+          <div class="card text-white bg-dark">
+            <img
+              src="/Images/Districts/Pathanamthitta.jpg"
+              class="card-img-top"
+              alt="Pathanamthitta"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pathanamthitta</h5>
+              <p class="card-text">
+                Pathanamthitta is a municipality situated in the Central Travancore region in the state of Kerala, India. It is the administrative capital of Pathanamthitta district. The town has a population of 37,538.Modern day Pathanamthitta District, the thirteenth revenue district of the State of Kerala was formed with effect from 1 November 1982.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    <div class="newtab-white">
+      <a href="underconstruction.html" target="_blank">
+        <div class="col">
+          <div class="card">
+            <img
+              src="/Images/Districts/Trivandrum.jpg"
+              class="card-img-top"
+              alt="Trivandrum"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Thiruvananthapuram</h5>
+              <p class="card-text">
+                Thiruvananthapuram (or Trivandrum) is the capital of the southern Indian state of Kerala. It's distinguished by its British colonial architecture and many art galleries.The city was officially referred to as Trivandrum until 1991 , when the government decided to reinstate the city's original name Thiruvananthapuram.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+        <!-- A div to make last 2 row -->
+        <div></div>
+        <!-- A div to make last 2 row -->
+        <div class="newtab">
+          <a href="underconstruction.html" target="_blank"><div class="col">
+          <div class="card text-white bg-dark">
+            <img
+              src="/Images/Districts/Thrissur.jpg"
+              class="card-img-top"
+              alt="Thrissur"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Thrissur</h5>
+              <p class="card-text">
+                Thrissur is a city in the south Indian state of Kerala. It's known for sacred sites and colorful festivals. In the center is Vadakkumnathan Temple, dedicated to Lord Shiva and adorned with murals. The ornate, Indo-Gothic Our Lady of Dolours Basilica is nearby.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+    
+    <div class="newtab-white">
+      <a href="underconstruction.html" target="_blank">
+        <div class="col">
+          <div class="card">
+            <img
+              src="/Images/Districts/Wayanad.jpg"
+              class="card-img-top"
+              alt="Wayanad"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Wayanad</h5>
+              <p class="card-text">
+                Wayanad is a rural district in Kerala state, southwest India. In the east, the Wayanad Wildlife Sanctuary is a lush, forested region with areas of high altitude, home to animals including Asiatic elephants, tigers, leopards and egrets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>  
+    </div>
+    
+    </section>
+    
+<!-- Modal SIGN-UP-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Kerala Tourism</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="container">
+          <div class="form-wrap">
+            <h1>Sign Up</h1>
+            <p>Get regular updates and newsletters by signing up</p>
+            <form>
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" name="firstName" id="first-name" />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="lastName" id="last-name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="abc@xyz.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Should contain both letters and numbers"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input type="password" name="pasword2" id="password2" />
+              </div>
+              <button type="submit" class="btn">Sign Up</button>
+              <p class="bottom-text">
+                By clicking the Sign Up button, you agree to our <br>
+                <a href="#">Terms & Conditions</a> and
+                <a href="#">Privacy Policy</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#Login">Login Here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Log-IN-->
+<div class="modal fade" id="Login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Kerala Tourism</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="container">
+          <div class="form-wrap-login">
+            <h1>Log in</h1>
+            <form>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="abc@xyz.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Should contain both letters and numbers"
+                />
+              </div>
+              <button type="submit" class="btn">Log in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Forgot password? <a href="#">Click here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button"class="btn" id="btn-back-to-top">
+  <a href="#">
+    <img
+    src="/Images/pngaaa.com-1862718.png" alt=""
+    width="25"
+    height="22"
+    />
+  </a>
+</button>
+
+    <footer class="webpage" id="contact">
+      Toll free No: 1-800-425-4747
+      <br>
+    Department of Tourism, Government of Kerala, Park View, Thiruvananthapuram, Kerala, India - 695 033
+      <br>
+      Phone:+91 471 2321132, 
+      Fax:+91 471 2322279,
+      E-mail:info@keralatourism.org
+    </footer>
+  </body>
+</html>

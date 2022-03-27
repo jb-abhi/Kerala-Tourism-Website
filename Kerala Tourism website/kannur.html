@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kannur</title>
+    <link rel="stylesheet" href="place.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <!-- NAVBAR -->
+
+      <div class="nav-links sticky-top">
+        <nav class="navbar navbar-expand-lg" style="background-color: #e8edf7">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/Images/images.png"
+                alt=""
+                width="80"
+                height="60"
+                class="d-inline-block align-text-left"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kannur.html#places">Explore</a>
+                </li>
+              </ul>
+
+              <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                <button
+                  class="btn btn-warning btn-lg me-md-2"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Login"
+                >
+                  Log-in
+                </button>
+                <button
+                  class="btn btn-success btn-lg"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Sign-up
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- NAVBAR END -->
+    <!-- Modal SIGN-UP-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kerala Tourism</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="container">
+              <div class="form-wrap">
+                <h1>Sign Up</h1>
+                <p>Get regular updates and newsletters by signing up</p>
+                <form>
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="firstName" id="first-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="lastName" id="last-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="abc@xyz.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Should contain both letters and numbers"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="pasword2" id="password2" />
+                  </div>
+                  <button type="submit" class="btn">Sign Up</button>
+                  <p class="bottom-text">
+                    By clicking the Sign Up button, you agree to our <br />
+                    <a href="#">Terms & Conditions</a> and
+                    <a href="#">Privacy Policy</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p>
+              Already have an account?
+              <a href="#" data-bs-toggle="modal" data-bs-target="#Login"
+                >Login Here</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Log-IN-->
+    <div
+      class="modal fade"
+      id="Login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kerala Tourism</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="container">
+              <div class="form-wrap-login">
+                <h1>Log in</h1>
+                <form>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="abc@xyz.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Should contain both letters and numbers"
+                    />
+                  </div>
+                  <button type="submit" class="btn">Log in</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p>Forgot password? <a href="#">Click here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form">
+      <h4>BOOK A TOUR</h4>
+      <!-- FORM -->
+      <div class="wrapper">
+        <form action="#">
+          <div
+            class="form-group border-bottom d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <label class="option my-sm-0 my-2">
+              <input type="radio" name="radio" checked />Round Trip
+              <span class="checkmark"></span>
+            </label>
+            <label class="option my-sm-0 my-2">
+              <input type="radio" name="radio" />One Way
+              <span class="checkmark"></span>
+            </label>
+            <div class="d-flex align-items-center my-sm-0 my-2">
+              <a href="#" class="text-decoration-none">
+                Multi-city/Stopovers
+                <span class="fas fa-angle-right ps-2 text-primary"></span>
+              </a>
+            </div>
+          </div>
+          <div class="form-group d-sm-flex margin">
+            <div
+              class="d-flex align-items-center flex-fill me-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="text"
+                required
+                placeholder="From"
+                class="form-control"
+              />
+              <div class="label" id="from"></div>
+              <span class="fas fa-dot-circle text-muted"></span>
+            </div>
+            <div
+              class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="text"
+                required
+                placeholder="To"
+                class="form-control"
+              />
+              <div class="label" id="to"></div>
+              <span class="fas fa-map-marker text-muted"></span>
+            </div>
+          </div>
+          <div class="form-group d-sm-flex margin">
+            <div
+              class="d-flex align-items-center flex-fill me-sm1 my-sm-0 border-bottom position-relative"
+            >
+              <input
+                type="date"
+                required
+                placeholder="Depart Date"
+                class="form-control"
+              />
+              <div class="label" id="depart"></div>
+            </div>
+            <div
+              class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="date"
+                required
+                placeholder="Return Date"
+                class="form-control"
+              />
+              <div class="label" id="return"></div>
+            </div>
+          </div>
+          <div
+            class="form-group border-bottom d-flex align-items-center position-relative"
+          >
+            <input
+              type="text"
+              required
+              placeholder="Traveller(s)"
+              class="form-control"
+            />
+            <div class="label" id="psngr"></div>
+            <span class="fas fa-users text-muted"></span>
+          </div>
+          <div class="form-group my-3">
+            <div
+              class="btn btn-primary rounded-0 d-flex justify-content-center text-center p-2"
+            >
+              Search Flights
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Carousal Start -->
+    <!-- Carousel wrapper -->
+    <div
+      id="carouselVideoExample"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Videos/pexels-syam-krishnan-9109380.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Images/Districts/Kannur/Y2Mate.is - Kerala - God's Own Country Aerial (Drone) Video in 4K - Helicam India-SI-JAsIO9ps-1080p-1645117953208 (online-video-cutter.com) (2).mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Images/Districts/Kannur/Y2Mate.is - Kerala - God's Own Country Aerial (Drone) Video in 4K - Helicam India-SI-JAsIO9ps-1080p-1645117953208 (online-video-cutter.com).mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <!-- <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselVideoExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselVideoExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
+
+    <!-- Explore -->
+
+    <div class="container" id="places">
+      <section class="article">
+        <!-- <div class="explore"> -->
+        <h3>Explore Kannur</h3>
+        <div class="content">
+          <h4>1. PAYYAMBALAM BEACH</h4>
+          <img
+            src="/Images/Districts/Kannur images/pexels-alex-azabache-3250362.jpg"
+            alt=""
+            width="300"
+            height="450"
+          />
+          <p>
+            The impeccably unspoiled Payyabalam beach is adorned with sparkling
+            pearls of golden sand and foamy white waves of the Arabian Sea. The
+            highlight of Kannur and one of the many beautiful beaches of Kerala,
+            the Payyabalam beach has an incredibly peaceful and inviting aura.
+            <br />
+
+            Palm trees and casuarinas embellish the shores like an alluring
+            garland in various shades of green. This pristine golden beach is
+            not only great for relaxing and revitalizing yourself, but also for
+            boating, swimming, and thrilling adventure activities! <br />
+            The rhythmic dance of the turquoise waters is so inviting that you
+            are bound to be tempted to take a dip. Boating and indulging in some
+            adventure sports will allow you to wade deeper into these alluring
+            waters. <br />
+            The Payyamballam Beach spreads its reach for about 4 kms and is
+            nothing short of paradise on earth.
+          </p>
+          <h5>Best Time To Visit Payyambalam Beach</h5>
+          <p>
+            Even though Payyabalam Beach enjoys an amicable climate throughout
+            the year, it is most enjoyable during the winter months. <br />
+            The winter breaks in as soon as September begins to set in and goes
+            on till the last days of February. The temperatures hover around a
+            pleasant 16 degrees Celsius which is the perfect weather for
+            sightseeing and exploration. <br />The summers arrive in March and
+            last until May.
+          </p>
+        </div>
+
+        <div class="content2">
+          <h4>2. MUZHAPPILANGAD BEACH</h4>
+          <img
+            src="/Images/Districts/Kannur images/pexels-kevin-menajang-982673.jpg"
+            alt=""
+            width="300"
+            height="400"
+          />
+          <p>
+            he Muzzhapilangad Drive-in Beach at Kannur is one referred to with
+            many superlatives- as the longest drive-in beach in the whole of
+            India, as one of the cleanest beaches of Kannur and most
+            importantly, as one of the best drive-in beaches that the entire
+            Asian continent has to offer! <br />
+
+            The whole concept of drive-in beaches is that you can drive right on
+            the sandy shores of the beach- it is not very often that you get to
+            drive along a 4 km long shoreline that offers an open road with no
+            traffic and a stunning view.
+            <br />
+          </p>
+          <h5>What To Do at Muzzhapilangad Drive in Beach</h5>
+          <p>
+            As the name suggests, the Muzzhapilangad Drive in Beach is one of
+            the rare beaches in India and the only beach in Kerala that allows
+            vehicles to roam about its golden shores. If you enjoy driving, you
+            must give yourself the opportunity to drive on the sandy shore of
+            this beach- no speed bumps, no traffic, no turns; just a long
+            stretch of a flat and open road that has a mesmerisingly spectacular
+            view. <br />
+            You can also just lounge languorously on the beach and unwind
+            yourself after a long week. The authorities have impeccably
+            maintained the Muzzhapilangad Beach, so you can plop down your beach
+            mat and start sunbathing in the nurturing warmth of the sun
+            anywhere!
+          </p>
+        </div>
+        <div class="content">
+          <h4>3. ST ANGELO FORT</h4>
+          <img
+            src="/Images/Districts/Kannur images/st-angelo-fort-india_l.jpeg"
+            alt=""
+            width="300"
+            height="400"
+          />
+          <p>
+            St Angelos Fort is definitely one of the most popular and frequently
+            visited attractions of Kannur and for more reasons than one. The
+            polished yet prehistoric structure of this fortress oozes with
+            unadulterated elegance and overwhelming power. <br />
+
+            Walking around the walls of this majestic fort, you can almost
+            picture the battles that this fortress has seen. There are
+            tombstones of the soldiers who lost their lives fighting for the
+            fort, barracks and an old chapel here that you can explore. Kannur's
+            first ever lighthouse also stands next to the fort and adds to its
+            already hypnotic glory.
+          </p>
+          <h5>Architecture of St Angelo Fort</h5>
+          <p>
+            The fortress is shaped in a triangular fashion and is built entirely
+            out of the sturdiest laterite stone. St Angelos Fort drips with the
+            fascinating history plastered all over its walls. Walking around
+            these walls and staring into the crashing waves of the Arabian sea,
+            you can almost imagine the fleets of ship that docked here in the
+            war to conquer this majestic fort. Gigantic bastions built by the
+            Dutch are flanked in and around the structure. Small gaps in the
+            walls filled with the outward facing spouts of cannons made of the
+            purest iron. <br />
+          </p>
+        </div>
+        <div class="content2">
+          <h4>4. KANNUR LIGHTHOUSE</h4>
+          <img
+            src="/Images/Districts/Kannur images/Kannur_Lighthouse.jpg"
+            alt=""
+            width="300"
+            height="400"
+          />
+          <p>
+            Being Kerala's first lighthouse ever and Kannur's only one, the
+            Kannur Lighthouse is a pretty big deal. Standing tall at the height
+            of 75 feet, this lighthouse was first built in the early months of
+            1903. This cylindrical concrete tower has managed to withstand the
+            attacks of the Arabian Sea and has been fully functional for over a
+            century. <br />
+            The Kannur Lighthouse has a balcony with a light that is lit as the
+            evening breaks in to alert the seamen of the land. Treat the history
+            buff in you and visit this site to be impressed by its fascinating
+            history, fall in love with its mesmerising backdrop and be delighted
+            by the impeccable view. <br />
+
+            Since the lighthouse stands at a considerable height, one is
+            delighted with an enchanting and panoramic view of the entire city
+            of Kannur, the limitless Arabian Sea, the Baby Beach and even parts
+            of Payyaballam Beach. Going up the spiral staircase of this
+            lighthouse, you are introduced to a variety of ancient navigational
+            equipment whose immaculate engineering and impeccable designs are
+            sure to impress you greatly. <br />
+          </p>
+          <h5>Best Time To Visit Kannur Lighthouse</h5>
+          <p>
+            Even though Kannur Lighthouse enjoys an amicable climate throughout
+            the year, the lighthouse is most enjoyable during the winter months.
+            The winter breaks in as soon as September begins to set in and goes
+            on till the last days of February. <br />
+            The temperatures hover around a pleasant 16 degrees Celsius which is
+            the perfect weather for sightseeing and exploration.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="webpage" id="contact">
+      Toll free No: 1-800-425-4747
+      <br />
+      Department of Tourism, Government of Kerala, Park View,
+      Thiruvananthapuram, Kerala, India - 695 033
+      <br />
+      Phone:+91 471 2321132, Fax:+91 471 2322279, E-mail:info@keralatourism.org
+    </footer>
+
+    <button type="button" class="btn" id="btn-back-to-top">
+      <a href="#">
+        <img
+          src="/Images/pngaaa.com-1862718.png"
+          alt=""
+          width="25"
+          height="22"
+        />
+      </a>
+    </button>
+  </body>
+</html>

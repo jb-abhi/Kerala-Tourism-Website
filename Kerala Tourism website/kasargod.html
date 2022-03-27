@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kasargod</title>
+    <link rel="stylesheet" href="place.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <!-- NAVBAR -->
+
+      <div class="nav-links sticky-top">
+        <nav class="navbar navbar-expand-lg" style="background-color: #e8edf7">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/Images/images.png"
+                alt=""
+                width="80"
+                height="60"
+                class="d-inline-block align-text-left"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kasargod.html#places">Explore</a>
+                </li>
+              </ul>
+
+              <div class="d-grid gap-4 d-md-flex justify-content-md-end">
+                <button
+                  class="btn btn-warning btn-lg me-md-2"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Login"
+                >
+                  Log-in
+                </button>
+                <button
+                  class="btn btn-success btn-lg"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Sign-up
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- NAVBAR END -->
+    <!-- Modal SIGN-UP-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kerala Tourism</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="container">
+              <div class="form-wrap">
+                <h1>Sign Up</h1>
+                <p>Get regular updates and newsletters by signing up</p>
+                <form>
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="firstName" id="first-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="lastName" id="last-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="abc@xyz.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Should contain both letters and numbers"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="pasword2" id="password2" />
+                  </div>
+                  <button type="submit" class="btn">Sign Up</button>
+                  <p class="bottom-text">
+                    By clicking the Sign Up button, you agree to our <br />
+                    <a href="#">Terms & Conditions</a> and
+                    <a href="#">Privacy Policy</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p>
+              Already have an account?
+              <a href="#" data-bs-toggle="modal" data-bs-target="#Login"
+                >Login Here</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Log-IN-->
+    <div
+      class="modal fade"
+      id="Login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kerala Tourism</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="container">
+              <div class="form-wrap-login">
+                <h1>Log in</h1>
+                <form>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="abc@xyz.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Should contain both letters and numbers"
+                    />
+                  </div>
+                  <button type="submit" class="btn">Log in</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p>Forgot password? <a href="#">Click here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form">
+      <h4>BOOK A TOUR</h4>
+      <!-- FORM -->
+      <div class="wrapper">
+        <form action="#">
+          <div
+            class="form-group border-bottom d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <label class="option my-sm-0 my-2">
+              <input type="radio" name="radio" checked />Round Trip
+              <span class="checkmark"></span>
+            </label>
+            <label class="option my-sm-0 my-2">
+              <input type="radio" name="radio" />One Way
+              <span class="checkmark"></span>
+            </label>
+            <div class="d-flex align-items-center my-sm-0 my-2">
+              <a href="#" class="text-decoration-none">
+                Multi-city/Stopovers
+                <span class="fas fa-angle-right ps-2 text-primary"></span>
+              </a>
+            </div>
+          </div>
+          <div class="form-group d-sm-flex margin">
+            <div
+              class="d-flex align-items-center flex-fill me-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="text"
+                required
+                placeholder="From"
+                class="form-control"
+              />
+              <div class="label" id="from"></div>
+              <span class="fas fa-dot-circle text-muted"></span>
+            </div>
+            <div
+              class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="text"
+                required
+                placeholder="To"
+                class="form-control"
+              />
+              <div class="label" id="to"></div>
+              <span class="fas fa-map-marker text-muted"></span>
+            </div>
+          </div>
+          <div class="form-group d-sm-flex margin">
+            <div
+              class="d-flex align-items-center flex-fill me-sm1 my-sm-0 border-bottom position-relative"
+            >
+              <input
+                type="date"
+                required
+                placeholder="Depart Date"
+                class="form-control"
+              />
+              <div class="label" id="depart"></div>
+            </div>
+            <div
+              class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative"
+            >
+              <input
+                type="date"
+                required
+                placeholder="Return Date"
+                class="form-control"
+              />
+              <div class="label" id="return"></div>
+            </div>
+          </div>
+          <div
+            class="form-group border-bottom d-flex align-items-center position-relative"
+          >
+            <input
+              type="text"
+              required
+              placeholder="Traveller(s)"
+              class="form-control"
+            />
+            <div class="label" id="psngr"></div>
+            <span class="fas fa-users text-muted"></span>
+          </div>
+          <div class="form-group my-3">
+            <div
+              class="btn btn-primary rounded-0 d-flex justify-content-center text-center p-2"
+            >
+              Search Flights
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Carousal Start -->
+    <!-- Carousel wrapper -->
+    <div
+      id="carouselVideoExample"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselVideoExample"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Videos/Kasargod/production ID_4763824.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Videos/Kasargod/Pexels Videos 2330730.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <video class="img-fluid" autoplay loop muted>
+            <source
+              src="/Videos/Kasargod/Pexels Videos 2480792.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5></h5>
+            <!-- <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselVideoExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselVideoExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
+
+    <!-- Explore -->
+
+    <div class="container" id="places">
+      <section class="article">
+        <!-- <div class="explore"> -->
+        <h3>Explore Kasargod</h3>
+        <div class="content">
+          <h4>1. RANIPURAM</h4>
+          <img
+            src="/Images/Districts/Kasargod/ranipuram.jpg"
+            alt=""
+            width="300"
+            height="450"
+          />
+          <p>
+            The gentle hills of Ranipuram in Kerala are famous for its trekking
+            trail. Situated at the height of about 750 meters above sea level,
+            this destination has thick forest vegetation and lush green
+            grasslands. The whole place is proposed inside the Ranipuram
+            Wildlife Sanctuary which merges with Talakaveri Wildlife Sanctuary
+            of Karnataka. <br />
+
+            The sublime beauty of this region is comparable to that of Ooty, and
+            is a must-visit for all nature enthusiasts. The innocent life of the
+            village and gentle nature make a perfect blend of delight and
+            enjoyment. <br />
+            The entire trek route of Ranipuram is very scenic and a delight for
+            nature photographers. The trek lasts for about two and a half
+            kilometres, and the summit has a cave, and reaching it is quite an
+            adventurous experience.
+          </p>
+          <h5>Best Time To Visit Ranipuram</h5>
+          <p>
+            As the name suggests, the Muzzhapilangad Drive in Beach is one of
+            the rare beaches in India and the only beach in Kerala that allows
+            vehicles to roam about its golden shores. <br />
+            You can also just lounge languorously on the beach and unwind
+            yourself after a long week. The authorities have impeccably
+            maintained the Muzzhapilangad Beach, so you can plop down your beach
+            mat and start sunbathing in the nurturing warmth of the sun
+            anywhere!
+          </p>
+        </div>
+
+        <div class="content2">
+          <h4>2. CHERUVATHUR</h4>
+          <img
+            src="/Images/Districts/Kasargod/1200px-Pottan_Theyyam_Cheruvathur.jpg"
+            alt=""
+            width="300"
+            height="400"
+          />
+          <p>
+            Cheruvathur is a cosy small town in the Kasaragod district of
+            Kerala, located only 10 kilometres south of the major town of
+            Nileshwaram. The place is known for being the birthplace of great
+            19th-century poet Mahakavi Kuttamath of Kerala. <br />
+            His work on musical drama and poem compilations is an excellent
+            source of literary inspiration in Cheruvathur. Keeping that in mind,
+            authorities changed the name of the town to Kuttamath Nagar on
+            paper. However, most people still call the town Cheruvathur only.
+            <br />
+
+            The etymology of the name has its origin in the Malayalam words
+            "cheriya pathu ooru" which means ten small places. Cheruvathur
+            mainly attracts tourists because of its lovely views and greeneries.
+            <br />
+            But more than that, it is a peaceful suburban retreat for a short
+            weekend trip. There are not many places which you can visit. So, you
+            can spend the time with your loved ones as much as you want to.
+            <br />
+          </p>
+          <h5>How To Reach Cheruvathur</h5>
+          <p>
+            Cheruvathur is connected to the NH 66 which leads to Mangalore in
+            the north and Calicut to the south. Smaller roads shoot off from the
+            national highway and lead to the town of Cheruvathur. You can always
+            rent a car or hire a cab to reach the tiny hamlet. <br />
+          </p>
+        </div>
+        <div class="content">
+          <h4>3. NILESHWAR</h4>
+          <img
+            src="/Images/Districts/Kasargod/pexels-joji-graison-10229069.jpg"
+            alt=""
+            width="300"
+            height="400"
+          />
+          <p>
+            Nileshwaram, also known by the name of Nileshwar, is a major town
+            that is located in the Kasaragod District of Kerala in southern
+            India. Nileshwaram is one of the three municipalities that can be
+            found in the district, the others being Kasaragod and Kanhangad.
+            <br />
+            Nileshwaram is also referred to as the cultural capital of the
+            Kasargod District and lies nestled between two rivers, the
+            Nileshwaram Puzha and Thejaswini Puzha. With the Arabian Sea to its
+            west, the town is breathtakingly beautiful and a spectacular site to
+            be at. <br />
+            Nileshwaram once served as the seat of the Nileshwar Rajas of the
+            Kolathiri family and was also associated with the war between the
+            Nileshwar Rajas and the Bednore Nayaks.
+          </p>
+          <h5>Culture and festivities at Nileshwar</h5>
+          <p>
+            The town of Nileshwaram celebrates folk arts and temple festivals
+            with great zeal and fervour. The town also has a palace, kavuus or
+            sacred grooves, old markets, and a weaver street. The major
+            festivals celebrated in Nileshwaram include Pooram and Kalasam .
+            <br />
+            The most important shrine in Nileshwaram is the Mannan Purathu Kavu,
+            where the finale of the main temple festival takes place. <br />
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="webpage" id="contact">
+      Toll free No: 1-800-425-4747
+      <br />
+      Department of Tourism, Government of Kerala, Park View,
+      Thiruvananthapuram, Kerala, India - 695 033
+      <br />
+      Phone:+91 471 2321132, Fax:+91 471 2322279, E-mail:info@keralatourism.org
+    </footer>
+
+    <button type="button" class="btn" id="btn-back-to-top">
+      <a href="#">
+        <img
+          src="/Images/pngaaa.com-1862718.png"
+          alt=""
+          width="25"
+          height="22"
+        />
+      </a>
+    </button>
+  </body>
+</html>
