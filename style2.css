@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+/* input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+} */
+
+:root {
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+}
+
+.form-field input:focus,
+.form-field-login input:focus {
+  outline: none;
+}
+
+.form-field.error input,
+.form-field-login.error input {
+  border-color: var(--error-color);
+}
+
+.form-field.success input,
+.form-field-login.success input {
+  border-color: var(--success-color);
+}
+
+.form-field small,
+.form-field-login small {
+  color: var(--error-color);
+}
+
+.form-wrap,
+.form-wrap-login {
+  height: fit-content;
+}
+
+.form-wrap p {
+  font-family: "Abel", sans-serif;
+  padding-top: 2px;
+  margin-bottom: 1px;
+}
+
+#password-strength-text {
+  font-weight: 600;
+}
+
+#password-strength-suggestions {
+  margin-bottom: -5px !important;
+  font-size: 15px;
+}
+
+/* METER */
+
+#showValue {
+  display: none;
+}
+
+.progress {
+  margin-top: 10px;
+}
+
+.meter {
+  position: relative;
+  overflow: hidden;
+}
+
+.meter span {
+  display: block;
+  height: 100%;
+}
+
+.progress {
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.checklist {
+  text-align: left;
+  font-size: 13px;
+  display: none;
+}
+
+#first-point,
+#second-point,
+#third-point {
+  text-align: left;
+  color: rgb(214, 0, 0);
+}

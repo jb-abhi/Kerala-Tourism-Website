@@ -242,18 +242,18 @@ a {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-bottom: 10px;
 }
-.form-wrap-login .form-group,
-.form-wrap .form-group {
+.form-wrap-login .form-field-login,
+.form-wrap .form-field {
   text-align: left;
   margin-bottom: 15px;
 }
-.form-wrap-login .form-group label,
-.form-wrap .form-group label {
+.form-wrap-login .form-field-login label,
+.form-wrap .form-field label {
   display: block;
 }
 
-.form-wrap-login .form-group input,
-.form-wrap .form-group input {
+.form-wrap-login .form-field-login input,
+.form-wrap .form-field input {
   width: 100%;
   padding: 3px;
   border: #ddd 1px solid;

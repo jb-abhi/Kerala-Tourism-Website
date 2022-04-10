@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kerala Tourism</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,8 +24,11 @@
       href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+
   </head>
   <body>
+
     <section class="header">
       <!-- NAVBAR -->
       
@@ -486,38 +490,65 @@
           <div class="form-wrap">
             <h1>Sign Up</h1>
             <p>Get regular updates and newsletters by signing up</p>
-            <form>
-              <div class="form-group">
-                <label for="first-name">First Name</label>
-                <input type="text" name="firstName" id="first-name" />
+            <form id="signup" class="form">
+              <div class="form-field">
+                <label for="first-name">Username</label>
+                <input type="text" name="firstName" id="first-name" placeholder="Username must be between 3 and 25 characters"/>
+                <small></small>
               </div>
-              <div class="form-group">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="lastName" id="last-name" />
+              <div class="form-field">
+                <label for="last-name">Phone-Number</label>
+                <input type="text" name="phonenumber" id="phone-number" placeholder="Enter 10 digit number"/>
+                <small></small>
               </div>
-              <div class="form-group">
+              <div class="form-field">
                 <label for="email">Email</label>
                 <input
                   type="email"
                   name="email"
-                  id="email"
+                  id="signup-email"
                   placeholder="abc@xyz.com"
+                  
                 />
+                <small></small>
               </div>
-              <div class="form-group">
+              <div class="form-field">
                 <label for="password">Password</label>
                 <input
                   type="password"
                   name="password"
-                  id="password"
+                  id="signup-password"
                   placeholder="Should contain both letters and numbers"
+                  
                 />
+                <small></small>
+                <div class="checklist">
+                  <p id="first-point">Minimum 8 characters required.</p>
+                  <p id="second-point">At least one uppercase and one lowercase.</p>
+                  <p id="third-point">And must contain at least one number.</p>
+                </div>
+                
+                <!-- METERSTRENGTH -->
+                <!-- <meter max="4" id="password-strength-meter"></meter> -->
+                <div class="progress" id="showValue">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                <p id="password-strength-text"></p>
+                <p id="password-strength-suggestions"></p>
+                 <!-- METERSTRENGTH -->
               </div>
-              <div class="form-group">
+              <div class="form-field">
                 <label for="password2">Confirm Password</label>
-                <input type="password" name="pasword2" id="password2" />
+                <input type="password" name="pasword2" id="password2" 
+                placeholder="Should contain both letters and numbers"
+                 />
+                <small></small>
               </div>
-              <button type="submit" class="btn">Sign Up</button>
+              <div class="form-field">
+                <button
+                type="submit" value="Sign Up">Sign-up</button>
+              </div>
+              <!-- <button type="submit" class="btn">Sign Up</button> -->
               <p class="bottom-text">
                 By clicking the Sign Up button, you agree to our <br>
                 <a href="#">Terms & Conditions</a> and
@@ -547,24 +578,26 @@
         <div id="container">
           <div class="form-wrap-login">
             <h1>Log in</h1>
-            <form>
-              <div class="form-group">
+            <form id="login-form" class="form">
+              <div class="form-field-login">
                 <label for="email">Email</label>
                 <input
                   type="email"
                   name="email"
-                  id="email"
+                  id="login-email"
                   placeholder="abc@xyz.com"
                 />
+                <small></small>
               </div>
-              <div class="form-group">
+              <div class="form-field-login">
                 <label for="password">Password</label>
                 <input
                   type="password"
                   name="password"
-                  id="password"
+                  id="login-password"
                   placeholder="Should contain both letters and numbers"
                 />
+                <small></small>
               </div>
               <button type="submit" class="btn">Log in</button>
             </form>
@@ -597,5 +630,6 @@
       Fax:+91 471 2322279,
       E-mail:info@keralatourism.org
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
